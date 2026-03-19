@@ -1,16 +1,18 @@
 ---
-description: Standards for code comment placement, formatting, and preferred syntax (// vs /*).
+description: Guidelines for comment placement, formatting, and preferred syntax.
 globs: "**/*.{js,ts,jsx,tsx,vue,html,css,scss}"
 ---
 
 # Comment Conventions
 
-## Core Rules (Original & Updated)
-- **Placement**: All comments must be placed on a separate line **above** the code they describe. Inline or end-of-line comments (e.g., `const a = 1; // comment`) are strictly prohibited.
-- **Preferred Syntax (//)**: Prioritize the use of double-slash `//` for all comments. 
-- **Exceptions**: In environments where `//` is syntactically invalid or may cause parsing issues (such as within certain blocks of JSX or HTML templates), you may retain the standard block comment `/* ... */` or HTML comment ``.
+## Core Rules
+- **Placement**: Put every comment on its own line directly above the code it explains. Inline and end-of-line comments (for example, `const a = 1; // comment`) are not allowed.
+- **Preferred Syntax**: Use double-slash comments (`//`) by default.
+- **Exceptions**: If `//` is invalid or causes parsing issues (for example, in specific JSX or HTML template contexts), use the appropriate block syntax such as `/* ... */` or `<!-- ... -->`.
 
-## Added Enhancements (My Recommendations)
-- **Spacing**: Always include a single space after the comment character (e.g., use `// Comment` instead of `//Comment`) to improve scannability.
-- **Contextual Clarity**: If a comment refers to a multi-line code block, ensure there is no empty line between the comment and the first line of that block.
-- **JSDoc Exception**: For formal API documentation or complex function exports, `/** ... */` (JSDoc) is still permitted and encouraged for better IDE Intellisense.
+## Writing Quality
+- **Spacing**: Add exactly one space after the comment marker (use `// Comment`, not `//Comment`) to keep comments easy to scan.
+- **Context Linkage**: When a comment describes a multi-line block, place it immediately above the first line of that block with no blank line in between.
+- **JSDoc Exception**: `/** ... */` is allowed and encouraged for API-level docs or complex exported functions when IDE IntelliSense benefits from structured annotations.
+- **No Emoji**: Do not use emoji in comments.
+- **Natural Tone**: Write comments in clear, concise, human-sounding English. Avoid generic or overly polished "AI-style" phrasing.
