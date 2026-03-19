@@ -1,0 +1,8 @@
+---
+description: Safe JSON parsing standards using try-catch blocks.
+globs: "**/*.{js,ts,jsx,tsx,vue}"
+---
+# Safe JSON Parsing
+
+- **Safe Parse**: Wrap `JSON.parse()` in `try...catch` blocks to prevent crashes from malformed strings.
+- Consider creating a utility function `safeJsonParse(str, defaultVal)` to reuse this logic across the project.

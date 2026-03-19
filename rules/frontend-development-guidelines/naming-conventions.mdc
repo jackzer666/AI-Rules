@@ -1,0 +1,8 @@
+---
+description: Naming standards for components and functions.
+globs: "**/*.{js,ts,jsx,tsx,vue}"
+---
+# Naming Conventions
+
+- **Component Matching**: Internal component names must match the file name.
+- **Verb-First Functions**: Function names must reflect their action (e.g., `removeUser`, `fetchData`).

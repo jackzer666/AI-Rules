@@ -1,0 +1,16 @@
+---
+description: Standards for code comment placement, formatting, and preferred syntax (// vs /*).
+globs: "**/*.{js,ts,jsx,tsx,vue,html,css,scss}"
+---
+
+# Comment Conventions
+
+## Core Rules (Original & Updated)
+- **Placement**: All comments must be placed on a separate line **above** the code they describe. Inline or end-of-line comments (e.g., `const a = 1; // comment`) are strictly prohibited.
+- **Preferred Syntax (//)**: Prioritize the use of double-slash `//` for all comments. 
+- **Exceptions**: In environments where `//` is syntactically invalid or may cause parsing issues (such as within certain blocks of JSX or HTML templates), you may retain the standard block comment `/* ... */` or HTML comment ``.
+
+## Added Enhancements (My Recommendations)
+- **Spacing**: Always include a single space after the comment character (e.g., use `// Comment` instead of `//Comment`) to improve scannability.
+- **Contextual Clarity**: If a comment refers to a multi-line code block, ensure there is no empty line between the comment and the first line of that block.
+- **JSDoc Exception**: For formal API documentation or complex function exports, `/** ... */` (JSDoc) is still permitted and encouraged for better IDE Intellisense.

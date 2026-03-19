@@ -1,0 +1,8 @@
+---
+description: Standards for providing fallbacks to API response data, especially arrays.
+globs: "**/*.{js,ts,jsx,tsx,vue}"
+---
+# API Data Fallback
+
+- **Array Fallback**: Always provide a fallback for array fields in API responses. If the backend returns null/undefined, ensure the frontend defaults to an empty array `[]`.
+- Prefer nullish coalescing `??` (e.g., `const list = res.data ?? []`) over OR `||` to prevent skipping valid empty strings or zeros.

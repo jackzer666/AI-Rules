@@ -1,0 +1,15 @@
+---
+description: Standards for equality operators (===) and legacy code preservation.
+globs: "**/*.{js,ts,jsx,tsx,vue}"
+---
+
+# Strict Equality Checks
+
+## Core Rules (Original & Updated)
+- **New Code Standard**: Always use strict equality `===` and `!==` for all new logic and comparisons. Use of loose equality `==` or `!=` is strictly forbidden in new code.
+- **Legacy Preservation**: If existing code (legacy code) already uses the loose equality operator `==` or `!=`, **do not** perform an automated or manual conversion to `===` or `!==`. 
+- **Modification Rule**: Only update to strict equality if you are already refactoring the surrounding logic and have verified that the change in type-coercion will not introduce bugs.
+
+## Added Enhancements (My Recommendations)
+- **Null/Undefined Checks**: For checking if a value is "null-ish", prefer the explicit `(val === null || val === undefined)` or the more modern `(val ?? null) === null` rather than relying on `val == null`.
+- **Type Casting**: If you need to compare different types, perform explicit type casting (e.g., `String(id) === targetId`) instead of using `==`.

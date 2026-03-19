@@ -1,0 +1,8 @@
+---
+description: Proper usage of optional chaining (?.) and avoiding redundancy.
+globs: "**/*.{js,ts,jsx,tsx}"
+---
+# Optional Chaining Logic
+
+- **Simplify Checks**: Use `?.` to access deeply nested properties.
+- **No Redundancy**: If `a?.b` was already checked in an `if` condition, use `a.b` directly inside that block.

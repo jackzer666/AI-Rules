@@ -1,0 +1,8 @@
+---
+description: Rules for module export placement and formatting.
+globs: "**/*.{js,ts,jsx,tsx,vue}"
+---
+# Module Export Standards
+
+- **Bottom Exports**: Place all `export` statements at the bottom of the file.
+- **No Inline Export**: Do not use `export const ...`. Move legacy inline exports to the bottom.

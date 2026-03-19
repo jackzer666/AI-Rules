@@ -1,0 +1,8 @@
+---
+description: Standards for magic literals, constants, and storage keys.
+globs: "**/*.{js,ts,jsx,tsx}"
+---
+# Constants & Magic Literals
+
+- **No Magic Values**: Compare values against named constants (e.g., `STATUS_SUCCESS`).
+- **Storage Keys**: Keys for `localStorage` must be `UPPER_SNAKE_CASE` (e.g., `TOKEN_KEY`) and placed at the top of the file.

@@ -1,0 +1,18 @@
+---
+description: Standards for function declaration syntax, favoring arrow functions while respecting context-specific needs.
+globs: "**/*.{js,ts,jsx,tsx,vue}"
+---
+
+# Function Declaration Standards
+
+## Core Rules (Original & Refined)
+- **Prefer Arrow Functions**: Use arrow function syntax `const funcName = (...) => { ... }` by default for all standard functions, component methods, and callbacks.
+- **Context-Specific Exceptions**: Use the `function` keyword instead of arrow functions in the following scenarios:
+    - **Constructors**: When a function is intended to be used with the `new` keyword.
+    - **Dynamic `this`**: When the function requires its own dynamic `this` context (e.g., certain library lifecycle hooks, jQuery events, or object methods that rely on caller binding).
+    - **Generator Functions**: Use `function*` for generator functions as arrow functions do not support this syntax.
+
+## Added Enhancements
+- **Named vs. Anonymous**: For complex logic, prefer named arrow functions or assigned constants over anonymous ones to improve stack trace readability during debugging.
+- **Implicit Returns**: For simple, single-expression functions, utilize the implicit return feature of arrow functions (e.g., `const add = (a, b) => a + b`) to keep the code concise.
+- **Consistent React Components**: If using functional components, maintain consistency by using arrow functions: `const MyComponent = () => { ... }`.

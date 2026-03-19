@@ -1,0 +1,8 @@
+---
+description: Standards for async keyword usage and asynchronous flow control.
+globs: "**/*.{js,ts,jsx,tsx}"
+---
+# Async Usage Standards
+
+- **Strict Async**: Do not use the `async` keyword for functions that do not contain `await` or return a Promise.
+- **Async/Await**: (Merged from original Tools section) Prefer `async/await` syntax over `.then().catch()` for better readability.

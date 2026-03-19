@@ -1,0 +1,8 @@
+---
+description: Guidelines for styling methods and template formatting.
+globs: "**/*.{jsx,tsx,vue,html}"
+---
+# Styling & Templates
+
+- **Class Over Style**: Use CSS classes for styling. Inline styles must not exceed 3 properties.
+- **Template Entities**: Use `&nbsp;` for explicit spaces in HTML/Templates.

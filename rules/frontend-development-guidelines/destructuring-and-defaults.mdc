@@ -1,0 +1,8 @@
+---
+description: Rules for object destructuring and default value assignment.
+globs: "**/*.{js,ts,jsx,tsx}"
+---
+# Destructuring & Defaults
+
+- **Single Default**: If a default value is set during destructuring (e.g., `{ a = [] }`), do not use `a || []` later.
+- **Smart Destructuring**: Destructure objects when they have >3 properties or are referenced multiple times.

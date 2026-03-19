@@ -1,0 +1,8 @@
+---
+description: Rules for handling legacy, commented-out code and TODOs.
+globs: "**/*"
+---
+# Legacy Code Cleanup
+
+- **Delete Dead Code**: Do not leave commented-out code blocks. Delete them.
+- **Temporary TODOs**: If code must stay, add a `// TODO:` with a specific version/iteration for cleanup (e.g., `// TODO: cleanup in v1.2`).
