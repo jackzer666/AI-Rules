@@ -1,6 +1,7 @@
 ---
 description: Rules for module export placement and formatting.
-globs: "**/*.{js,ts,jsx,tsx,vue}"
+paths:
+  - "**/*.{js,ts,jsx,tsx,vue}"
 ---
 # Module Export Standards
 

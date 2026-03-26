@@ -1,6 +1,7 @@
 ---
 description: Guidelines for styling methods and template formatting.
-globs: "**/*.{jsx,tsx,vue,html}"
+paths:
+  - "**/*.{jsx,tsx,vue,html}"
 ---
 # Styling & Templates
 

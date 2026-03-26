@@ -1,6 +1,7 @@
 ---
 description: Standards for equality operators (===) and legacy code preservation.
-globs: "**/*.{js,ts,jsx,tsx,vue}"
+paths:
+  - "**/*.{js,ts,jsx,tsx,vue}"
 ---
 # Strict Equality Checks
 

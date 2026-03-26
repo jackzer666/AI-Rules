@@ -1,6 +1,7 @@
 ---
 description: Standards for providing fallbacks to API response data, especially arrays.
-globs: "**/*.{js,ts,jsx,tsx,vue}"
+paths:
+  - "**/*.{js,ts,jsx,tsx,vue}"
 ---
 # API Data Fallback
 

@@ -1,6 +1,7 @@
 ---
 description: Guidelines for comment placement, formatting, and preferred syntax.
-globs: "**/*.{js,ts,jsx,tsx,vue,html,css,scss}"
+paths:
+  - "**/*.{js,ts,jsx,tsx,vue,html,css,scss}"
 ---
 # Comment Conventions
 

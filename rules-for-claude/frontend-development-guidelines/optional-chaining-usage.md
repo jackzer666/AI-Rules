@@ -1,6 +1,7 @@
 ---
 description: Proper usage of optional chaining (?.) and avoiding redundancy.
-globs: "**/*.{js,ts,jsx,tsx}"
+paths:
+  - "**/*.{js,ts,jsx,tsx}"
 ---
 # Optional Chaining Logic
 

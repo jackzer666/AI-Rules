@@ -1,6 +1,7 @@
 ---
 description: Rules for object destructuring and default value assignment.
-globs: "**/*.{js,ts,jsx,tsx}"
+paths:
+  - "**/*.{js,ts,jsx,tsx}"
 ---
 # Destructuring & Defaults
 

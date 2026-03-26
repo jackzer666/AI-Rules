@@ -1,6 +1,7 @@
 ---
 description: Safe JSON parsing standards using try-catch blocks.
-globs: "**/*.{js,ts,jsx,tsx,vue}"
+paths:
+  - "**/*.{js,ts,jsx,tsx,vue}"
 ---
 # Safe JSON Parsing
 

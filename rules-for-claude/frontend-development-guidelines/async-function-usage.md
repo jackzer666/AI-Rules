@@ -1,6 +1,7 @@
 ---
 description: Standards for async keyword usage and asynchronous flow control.
-globs: "**/*.{js,ts,jsx,tsx}"
+paths:
+  - "**/*.{js,ts,jsx,tsx}"
 ---
 # Async Usage Standards
 

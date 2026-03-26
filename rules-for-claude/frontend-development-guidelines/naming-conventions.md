@@ -1,6 +1,7 @@
 ---
 description: Naming standards for components and functions.
-globs: "**/*.{js,ts,jsx,tsx,vue}"
+paths:
+  - "**/*.{js,ts,jsx,tsx,vue}"
 ---
 # Naming Conventions
 

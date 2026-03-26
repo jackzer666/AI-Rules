@@ -1,6 +1,7 @@
 ---
 description: Standards for function declaration syntax, favoring arrow functions while respecting context-specific needs.
-globs: "**/*.{js,ts,jsx,tsx,vue}"
+paths:
+  - "**/*.{js,ts,jsx,tsx,vue}"
 ---
 # Function Declaration Standards
 

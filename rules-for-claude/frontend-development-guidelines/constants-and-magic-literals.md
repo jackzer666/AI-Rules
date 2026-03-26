@@ -1,6 +1,7 @@
 ---
 description: Standards for magic literals, constants, and storage keys.
-globs: "**/*.{js,ts,jsx,tsx}"
+paths:
+  - "**/*.{js,ts,jsx,tsx}"
 ---
 # Constants & Magic Literals
 

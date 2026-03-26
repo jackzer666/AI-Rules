@@ -1,6 +1,7 @@
 ---
 description: Rules for defining component states using enums or objects.
-globs: "**/*.{jsx,tsx,vue}"
+paths:
+  - "**/*.{jsx,tsx,vue}"
 ---
 # Component State Enums
 

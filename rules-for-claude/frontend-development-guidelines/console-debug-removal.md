@@ -1,6 +1,7 @@
 ---
 description: Management and removal of debug console statements.
-globs: "**/*.{js,ts,jsx,tsx,vue}"
+paths:
+  - "**/*.{js,ts,jsx,tsx,vue}"
 ---
 # Console Debug Removal
 
