@@ -26,3 +26,6 @@ When reviewing code changes, check each item below:
 - [ ] No unused `ref`, `reactive`, etc.
 - [ ] Props have proper defaults
 - [ ] No excessive inline styles
+
+## Accessibility
+- [ ] No `aria-*` attributes in templates
